@@ -11,7 +11,7 @@ After login,execute the following command line by line:
 ```
 mkdir COVID_clustering
 cd COVID_clustering
-python3 -m venv python3-virtualenv
+python3 -m venv ./venv
 source venv/bin/activate
 python3 -m pip install jupyter
 python3 -m pip install pandas sklearn seaborn numpy bokeh
