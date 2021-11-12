@@ -1,4 +1,4 @@
-# CS5525 Project2 - Getting Started
+# CS/STAT 5525 Project2 - Getting Started
 
 Open terminal on your machine, type in:
 a a
