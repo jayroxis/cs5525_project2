@@ -62,3 +62,5 @@ cd COVID_clustering
 unzip CORD-19-research-challenge.zip
 ```
 Finally, you should be able to run your notebook.
+
+**For any issues, please report to the [issue](https://github.com/jayroxis/cs5525_project2/issues) page**
