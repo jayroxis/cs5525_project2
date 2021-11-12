@@ -43,10 +43,17 @@ jupyter lab --port xxxx
 ```
 
 Note that the above three lines are the code you need to execute each time you login into the remote machine.On your PC, open `http://localhost:xxxx` in a browser.For the first time login, you may be asked to provide token to create a password.
+
 You may be able to see the UI of Jupyter Lab. By default, it has a side bar with file explorer at left and a notebook editor at right.
+
 You should be able to upload the notebook "covid-19-literature-clustering.ipynb" by draggin it into the file explorer in the Jupyter Lab UI.
+
 Double click to open it in the notebook editor.Download the dataset into your machine from Google Drive:
-https://drive.google.com/file/d/1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w/viewDrag the downloaded "CORD-19-research-challenge.zip" into the file explorer in your Jupyter Lab UI. It will start uploading the file into the remote server. It might take a while and please make sure you have stable network connection.Click on the "+" button on top of the file explorer and choose terminal in the popped out tab. Then type in the following:
+https://drive.google.com/file/d/1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w/view
+
+Drag the downloaded "CORD-19-research-challenge.zip" into the file explorer in your Jupyter Lab UI. It will start uploading the file into the remote server. 
+
+It might take a while and please make sure you have stable network connection.Click on the "+" button on top of the file explorer and choose terminal in the popped out tab. Then type in the following:
 	
 ```
 cd COVID_clustering
