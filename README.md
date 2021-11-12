@@ -13,9 +13,9 @@ mkdir COVID_clustering
 cd COVID_clustering
 python3 -m venv python3-virtualenv
 source venv/bin/activate
-python3 -m pip install jupyter --user
-python3 -m pip install pandas sklearn searborn numpy bokeh --user
-jupyter lab --port xxxx 
+python3 -m pip install jupyter
+python3 -m pip install pandas sklearn seaborn numpy bokeh
+jupyter lab --port xxxx --no-browser
 ```
 
 You may get some messages like:
@@ -39,7 +39,7 @@ It shows your jupyter server is running at port xxxx and your token will be the 
 ```
 cd COVID_clustering
 source venv/bin/activate
-jupyter lab --port xxxx 
+jupyter lab --port xxxx --no-browser
 ```
 
 Note that the above three lines are the code you need to execute each time you login into the remote machine.On your PC, open `http://localhost:xxxx` in a browser.For the first time login, you may be asked to provide token to create a password.
