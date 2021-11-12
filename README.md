@@ -1,7 +1,7 @@
 # CS5525 Project2 - Getting Started
 
 Open terminal on your machine, type in:
-
+a a
 `ssh -L 8000:localhost:xxxx username@rlogin.cs.vt.edu`
 
 Replace "xxxx" with an arbitrary 4 digits number, for example 8765. We will use this number later, let's use xxxx to denote it.
