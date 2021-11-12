@@ -27,7 +27,9 @@ You may get some messages like:
      or http://127.0.0.1:xxxx/?token=c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2
 ```
 
-It shows your jupyter server is running at port xxxx and your token will be the string after "token=". The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.Follow the following:
+It shows your jupyter server is running at port xxxx and your token will be the string after "token=". For example, here the token is `c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2`.
+
+The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.Follow the following:
 
 - Close the terminal and open a new one.
 - Use a new value of xxxx, type in:
