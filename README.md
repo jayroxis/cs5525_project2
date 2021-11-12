@@ -1,5 +1,7 @@
-# CS/STAT 5525 Project2 - Getting Started
+# CS5525 Project2 - Getting Started on Using `rlogin.cs.vt.edu`
 
+## Step 1. Create Account
+If you do not have an account on `rlogin.cs.vt.edu`, open a new account here: https://admin.cs.vt.edu/password/
 Open terminal on your machine, type in:
 
 `ssh -L 8000:localhost:xxxx username@rlogin.cs.vt.edu`
@@ -44,9 +46,7 @@ source venv/bin/activate
 jupyter lab --port xxxx --no-browser
 ```
 
-Note that the above three lines are the code you need to execute each time you login into the remote machine.
-
-On your PC, open `http://localhost:8000` in a browser.For the first time login, you may be asked to provide token to create a password.
+Note that the above three lines are the code you need to execute each time you login into the remote machine.On your PC, open `http://localhost:xxxx` in a browser.For the first time login, you may be asked to provide token to create a password.
 
 You may be able to see the UI of Jupyter Lab. By default, it has a side bar with file explorer at left and a notebook editor at right.
 
@@ -64,5 +64,3 @@ cd COVID_clustering
 unzip CORD-19-research-challenge.zip
 ```
 Finally, you should be able to run your notebook.
-
-**For any issues, please report to the [issue](https://github.com/jayroxis/cs5525_project2/issues) page**
