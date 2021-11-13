@@ -61,7 +61,13 @@ You may get a message that looks like the following:
 
 It shows your jupyter server is running at port xxxx and your token will be the string after "token=". For example, here the token is `c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2`.
 
+On your PC, open `http://localhost:xxxx` in a browser.For the first time login, you may be asked to provide token to create a password.
+
 The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.
+
+You may be able to see the UI of Jupyter Lab. By default, it has a side bar with file explorer at left and a notebook editor at right.
+
+You should be able to upload the notebook "covid-19-literature-clustering.ipynb" by draggin it into the file explorer in the Jupyter Lab UI.
 
 ## Step 5 (Optional). Reopening Jupyter Lab
 Follow the following:
@@ -79,11 +85,9 @@ source venv/bin/activate
 jupyter lab --port xxxx --no-browser
 ```
 
-Note that the above three lines are the code you need to execute each time you login into the remote machine.On your PC, open `http://localhost:xxxx` in a browser.For the first time login, you may be asked to provide token to create a password.
+Note that the above three lines are the code you need to execute each time you login into the remote machine.
 
-You may be able to see the UI of Jupyter Lab. By default, it has a side bar with file explorer at left and a notebook editor at right.
 
-You should be able to upload the notebook "covid-19-literature-clustering.ipynb" by draggin it into the file explorer in the Jupyter Lab UI.
 
 <!--
 Double click to open it in the notebook editor.Download the dataset into your machine from Google Drive:
