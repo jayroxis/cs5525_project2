@@ -23,7 +23,9 @@ cd 5525_Project2
 python3 -m venv ./venv
 source venv/bin/activate
 python3 -m pip install jupyterlab
-python3 -m pip install pandas sklearn seaborn numpy bokeh
+python3 -m numpy pandas sklearn
+python3 -m pip install Pillow==7.2.0
+python3 -m pip install seaborn bokeh
 ```
 
 ## Step 4. Downloading Data
