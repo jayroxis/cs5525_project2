@@ -11,7 +11,7 @@ ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu
 ````
 
 Replace "xxxx" with an arbitrary 4 digits number, for example 8765. This will be used as the port number to open Jupyter Lab later. 
-Replace "username" with your vt id, for example "kklein".
+Replace "pid" with your vt id, for example "kklein".
 
 ## Step 3. Installing Python Packages
 
