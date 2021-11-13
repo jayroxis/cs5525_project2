@@ -72,7 +72,7 @@ You may get a message that looks like the following:
 
 It shows your jupyter server is running at port xxxx and your token will be the string after "token=". For example, here the token is `c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2`.
 
-On your PC, open `http://localhost:xxxx` in a browser.For the first time login, you may be asked to provide token to create a password.
+On your PC, open `http://localhost:xxxx` in a browser. For the first time login, you may be asked to provide token to create a password.
 
 The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.
 
@@ -106,8 +106,9 @@ source venv/bin/activate
 jupyter lab --port xxxx --no-browser
 ```
 Note that the above three lines are the code you need to execute each time you login into the remote machine.
+On your PC, open `http://localhost:xxxx` in a browser. It might ask for the password you set in Step 4.
 
-
+DONE! Happy coding.
 
 <!--
 Follow the following:
@@ -129,4 +130,3 @@ cd COVID_clustering
 unzip CORD-19-research-challenge.zip
 ```
 -->
-Finally, you should be able to run your notebook.
