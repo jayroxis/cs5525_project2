@@ -7,7 +7,7 @@ If you do not have an account on `rlogin.cs.vt.edu`, open a new account here: ht
 Open a terminal on your machine and type in:
 
 ```
-ssh -L 8000:localhost:xxxx username@rlogin.cs.vt.edu
+ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu
 ````
 
 Replace "xxxx" with an arbitrary 4 digits number, for example 8765. This will be used as the port number to open Jupyter Lab later. 
