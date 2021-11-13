@@ -77,6 +77,7 @@ You may be able to see the UI of Jupyter Lab. By default, it has a side bar with
 
 You should be able to upload the notebook "covid-19-literature-clustering.ipynb" by draggin it into the file explorer in the Jupyter Lab UI.
 
+<!--
 Double click to open it in the notebook editor.Download the dataset into your machine from Google Drive:
 https://drive.google.com/file/d/1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w/view
 
@@ -88,4 +89,5 @@ It might take a while and please make sure you have stable network connection.Cl
 cd COVID_clustering
 unzip CORD-19-research-challenge.zip
 ```
+-->
 Finally, you should be able to run your notebook.
