@@ -30,10 +30,12 @@ To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is
 	
 ```
 pip3 install gdown
-gdown https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
+gdown -O CORD-19-research-challenge/ https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
+cd CORD-19-research-challenge
+unzip CORD-19-research-challenge.zip
 ```
 
-This should download `CORD-19-research-challenge.zip` inside `5525_Project2' folder.
+This should download `CORD-19-research-challenge.zip` inside `5525_Project2/CORD-19-research-challenge' folder, and then unzip it into the same folder.
 
 ## Step 4. Opening Jupyter Lab
 
