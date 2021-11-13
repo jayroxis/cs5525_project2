@@ -86,7 +86,7 @@ After opening a jupyter lab notebook, you can change the kernel to your preferre
 ![alt text](images/step1.png)
 ![alt text](images/step2.png)
 
-Now, you are ready for the "covid-19-literature-clustering.ipynb" notebook. `Save` the notebook and `close` the tab, when you are done. Closing the terminal on your machine will shut down the jupyter notebook.
+Now, you are ready for the "covid-19-literature-clustering.ipynb" notebook. `Save` the notebook and `close` the tab, when you are done with expriment 3. Closing the terminal on your machine will shut down the jupyter notebook.
 
 ## Step 6 (Optional). Reopening the Jupyter Lab Notebook
 
