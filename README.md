@@ -23,7 +23,7 @@ cd 5525_Project2
 python3 -m venv ./venv
 source venv/bin/activate
 ```
-This code will activate the virtual environment (venv), where we will install necessary packages.
+This code will activate the virtual environment (venv), where you will install necessary packages.
 
 ## Step 4. Installing Python Packages
 
@@ -41,7 +41,7 @@ python3 -m pip install seaborn bokeh
 
 ## Step 5. Downloading Data
 
-To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is relatively large), you use gdown to download the dataset on rlogin server by executing the following commands:
+To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is relatively large), you will use gdown to download the dataset on rlogin server by executing the following commands:
 	
 ```
 gdown -O Experiment3/CORD-19-research-challenge/ https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
