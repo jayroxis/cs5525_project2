@@ -31,7 +31,7 @@ Execute the following commands line by line to install the required packages:
 	
 ```
 python3 -m pip install jupyterlab
-ython3 -m pip install --user ipykernel
+python3 -m pip install --user ipykernel
 python3 -m ipykernel install --user --name=venv
 python3 -m pip install numpy pandas sklearn
 python3 -m pip install gdown
