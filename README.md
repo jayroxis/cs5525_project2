@@ -15,7 +15,7 @@ Replace "pid" with your vt id, for example "kklein".
 
 ## Step 3. Installing Python Packages
 
-Execute the following commands line by line:
+Execute the following commands line by line to setup the virtual environment (venv) and installing the required packages:
 	
 ```
 mkdir 5525_Project2
@@ -37,6 +37,7 @@ pip3 install gdown
 gdown -O Experiment3/CORD-19-research-challenge/ https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
 cd Experiment3/CORD-19-research-challenge
 unzip CORD-19-research-challenge.zip
+cd ~/5525_Project2/Experiment3/
 ```
 
 This should download `CORD-19-research-challenge.zip` inside `5525_Project2/CORD-19-research-challenge' folder, and then unzip it into the same folder.
@@ -60,12 +61,15 @@ You may get a message that looks like the following:
 
 It shows your jupyter server is running at port xxxx and your token will be the string after "token=". For example, here the token is `c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2`.
 
-The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.Follow the following:
+The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.
+
+## Step 5 (Optional). Reopening Jupyter Lab
+Follow the following:
 
 - Close the terminal and open a new one.
 - Use a new value of xxxx, type in:
 
-`ssh -L 8000:localhost:xxxx username@rlogin.cs.vt.edu`
+`ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu`
 
 - After login,execute the following commands line by line:
 	
