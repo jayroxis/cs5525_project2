@@ -1,29 +1,52 @@
-# CS5525 Project2 - Getting Started on Using `rlogin.cs.vt.edu`
+# CS5525 Project2 - Getting Started on Using rlogin.cs.vt.edu
 
-## Step 1. Create Account
+## Step 1. Creating Account
 If you do not have an account on `rlogin.cs.vt.edu`, open a new account here: https://admin.cs.vt.edu/password/
-Open terminal on your machine, type in:
+
+## Step 2. Logging into rlogin Server
+Open a terminal on your machine and type in:
 
 `ssh -L 8000:localhost:xxxx username@rlogin.cs.vt.edu`
 
-Replace "xxxx" with an arbitrary 4 digits number, for example 8765. We will use this number later, let's use xxxx to denote it.
+Replace "xxxx" with an arbitrary 4 digits number, for example 8765. This will be used as the port number to open Jupyter Lab later. 
 Replace "username" with your vt id, for example "kklein".
-After login,execute the following command line by line:
+
+## Step 3. Installing Python Packages
+
+Execute the following commands line by line:
 	
 ```
-mkdir COVID_clustering
-cd COVID_clustering
+mkdir 5525_Project2
+cd 5525_Project2
 python3 -m venv ./venv
 source venv/bin/activate
 python3 -m pip install jupyterlab
 python3 -m pip install pandas sklearn seaborn numpy bokeh
+```
+
+## Step 4. Downloading Data
+
+To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is relatively large), you can install gdown and download the dataset on rlogin server  by executing the following commands:
+	
+```
+pip3 install gdown
+gdown https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
+```
+
+This should download `CORD-19-research-challenge.zip` inside `5525_Project2' folder.
+
+## Step 4. Opening Jupyter Lab
+
+Execute the following command on rlogin server (replace xxxx by the port number you used during ssh in Step 2):
+	
+```
 jupyter lab --port xxxx --no-browser
 ```
 
-You may get some messages like:
+You may get a message that looks like the following:
 ```
     To access the notebook, open this file in a browser:
-        file:///C:/Users/bujie/AppData/Roaming/jupyter/runtime/nbserver-9476-open.html
+        ....
     Or copy and paste one of these URLs:
         http://localhost:xxxx/?token=c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2
      or http://127.0.0.1:xxxx/?token=c3c6074b04bff28d83fdc5d0ede431c0a121774816db49b2
