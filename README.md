@@ -12,6 +12,7 @@ ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu
 
 Replace "xxxx" with an arbitrary 4 digits number, for example 8765. This will be used as the port number to open Jupyter Lab later. 
 Replace "pid" with your vt id, for example "kklein".
+Enter your password.
 
 ## Step 3. Setting up the Enviornment
 
@@ -81,11 +82,34 @@ You should be able to upload the notebook "covid-19-literature-clustering.ipynb"
 
 ## Step 5. Changing the kernel
 
-After opening a jupyter lab notebook, you can change the kernel to your preferred kernel (venv). At the top right hand corner, you can find the kernel options. Select venv kernel as your preferred kernel for this project.
+After opening a jupyter lab notebook, you can change the kernel to your preferred kernel (venv). At the top menu bar you can find an option to change the kernel. Select venv kernel as your preferred kernel for this project.
+![alt text](images/step1.png)
+![alt text](images/step2.png)
 
+Now, you are ready for the "covid-19-literature-clustering.ipynb" notebook. `Save` the notebook and `close` the tab, when you are done. Closing the terminal on your machine will shut down the jupyter notebook.
 
 ## Step 6 (Optional). Reopening the Jupyter Lab Notebook
 
+To reopen the notebook after closing the terminal, you need to follow these instructions:
+- Open a terminal on your machine and type in:
+
+```
+ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu
+````
+xxxx can be a new value and will be used as the port number to open Jupyter Lab later. Enter your password.
+
+- After login, execute the following commands line by line:
+	
+```
+cd 5525_Project2
+source venv/bin/activate
+jupyter lab --port xxxx --no-browser
+```
+Note that the above three lines are the code you need to execute each time you login into the remote machine.
+
+
+
+<!--
 Follow the following:
 
 - Close the terminal and open a new one.
@@ -93,19 +117,6 @@ Follow the following:
 
 `ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu`
 
-- After login,execute the following commands line by line:
-	
-```
-cd COVID_clustering
-source venv/bin/activate
-jupyter lab --port xxxx --no-browser
-```
-
-Note that the above three lines are the code you need to execute each time you login into the remote machine.
-
-
-
-<!--
 Double click to open it in the notebook editor.Download the dataset into your machine from Google Drive:
 https://drive.google.com/file/d/1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w/view
 
