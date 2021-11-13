@@ -32,8 +32,8 @@ To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is
 	
 ```
 pip3 install gdown
-gdown -O CORD-19-research-challenge/ https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
-cd CORD-19-research-challenge
+gdown -O Experiment3/CORD-19-research-challenge/ https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
+cd Experiment3/CORD-19-research-challenge
 unzip CORD-19-research-challenge.zip
 ```
 
