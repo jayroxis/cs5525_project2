@@ -13,34 +13,44 @@ ssh -L 8000:localhost:xxxx pid@rlogin.cs.vt.edu
 Replace "xxxx" with an arbitrary 4 digits number, for example 8765. This will be used as the port number to open Jupyter Lab later. 
 Replace "pid" with your vt id, for example "kklein".
 
-## Step 3. Installing Python Packages
+## Step 3. Setting up the Enviornment
 
-Execute the following commands line by line to setup the virtual environment (venv) and installing the required packages:
-	
+Execute the following lines of codes to setup the virtual enviornment (venv):
+
 ```
 mkdir 5525_Project2
 cd 5525_Project2
 python3 -m venv ./venv
 source venv/bin/activate
+```
+This code will activate the virtual environment (venv), where we will install necessary packages.
+
+## Step 4. Installing Python Packages
+
+Execute the following commands line by line to install the required packages:
+	
+```
 python3 -m pip install jupyterlab
-python3 -m numpy pandas sklearn
+ython3 -m pip install --user ipykernel
+python3 -m ipykernel install --user --name=venv
+python3 -m pip install numpy pandas sklearn
+python3 -m pip install gdown
 python3 -m pip install Pillow==7.2.0
 python3 -m pip install seaborn bokeh
 ```
 
-## Step 4. Downloading Data
+## Step 5. Downloading Data
 
-To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is relatively large), you can install gdown and download the dataset on rlogin server  by executing the following commands:
+To download the `CORD-19-research-challenge.zip` dataset for Problem 3 (which is relatively large), you use gdown to download the dataset on rlogin server by executing the following commands:
 	
 ```
-pip3 install gdown
 gdown -O Experiment3/CORD-19-research-challenge/ https://drive.google.com/uc?id=1IC0s9QoBLWFN9tRI-z2QbJJWgngfAm8w
 cd Experiment3/CORD-19-research-challenge
 unzip CORD-19-research-challenge.zip
-cd ~/5525_Project2/Experiment3/
+cd ~/5525_Project2/
 ```
 
-This should download `CORD-19-research-challenge.zip` inside `5525_Project2/CORD-19-research-challenge' folder, and then unzip it into the same folder.
+This should download `CORD-19-research-challenge.zip` inside `5525_Project2/Experiment3/CORD-19-research-challenge' folder, and then unzip it into the same folder.
 
 ## Step 4. Opening Jupyter Lab
 
@@ -67,9 +77,15 @@ The xxxx value should be the same as the number you pick. Otherwise, you may nee
 
 You may be able to see the UI of Jupyter Lab. By default, it has a side bar with file explorer at left and a notebook editor at right.
 
-You should be able to upload the notebook "covid-19-literature-clustering.ipynb" by draggin it into the file explorer in the Jupyter Lab UI.
+You should be able to upload the notebook "covid-19-literature-clustering.ipynb" into the `Experiment3` folder by draggin it into the file explorer in the Jupyter Lab UI.
 
-## Step 5 (Optional). Reopening Jupyter Lab
+## Step 5. Changing the kernel
+
+After opening a jupyter lab notebook, you can change the kernel to your preferred kernel (venv). At the top right hand corner, you can find the kernel options. Select venv kernel as your preferred kernel for this project.
+
+
+## Step 6 (Optional). Reopening the Jupyter Lab Notebook
+
 Follow the following:
 
 - Close the terminal and open a new one.
