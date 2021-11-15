@@ -74,7 +74,7 @@ It shows your jupyter server is running at port xxxx and your token will be the 
 
 On your PC, open `http://localhost:xxxx` in a browser. For the first time login, you may be asked to provide token to create a password.
 
-The xxxx value should be the same as the number you pick. Otherwise, you may need to pick another value for xxxx and login again.
+The xxxx value should be the same as the port number you picked in Step 2. If the port number does not work and gives you an error, you may need to pick another value for xxxx and login again.
 
 You may be able to see the UI of Jupyter Lab. By default, it has a side bar with file explorer at left and a notebook editor at right.
 
